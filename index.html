@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pradeep Yadav — Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="scroll-bar" id="sb"></div>
+<div class="cur cur-dot" id="cd"></div>
+<div class="cur-ring" id="cr"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">PY<em>.</em>dev</div>
+  <ul class="nav-links" id="nl">
+    <li><a href="#home" onclick="cm()">Home</a></li>
+    <li><a href="#about" onclick="cm()">About</a></li>
+    <li><a href="#skills" onclick="cm()">Skills</a></li>
+    <li><a href="#projects" onclick="cm()">Projects</a></li>
+    <li><a href="#contact" onclick="cm()">Contact</a></li>
+  </ul>
+  <button class="ham" id="hb" onclick="tm()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="home-wrap">
+    <div>
+      <div class="chip"><span class="chip-dot"></span>Open to Opportunities</div>
+      <h1 class="home-name">
+        Pradeep<br><span class="t">Yadav</span>
+      </h1>
+      <div class="home-role">Data Analyst &amp; <span>BI Specialist</span></div>
+      <p class="home-summary">
+        Detail-oriented Data Analyst specialising in dashboard development, KPI reporting, and exploratory data analysis. I transform complex datasets into actionable business insights through statistical analysis and data visualization.
+      </p>
+      <div class="home-cta">
+        <a href="#projects" class="btn btn-p">View Projects</a>
+        <a href="resume.pdf" download class="btn btn-p">Download Resume</a>
+        <a href="#contact" class="btn btn-o">Hire Me</a>
+      </div>
+    </div>
+    <div class="home-card">
+      <div class="badge-float bf1">📊 KPI Expert</div>
+      <div class="profile-block">
+        <div class="profile-top">
+          <div class="av">PY</div>
+          <div>
+            <div class="profile-name">Pradeep Yadav</div>
+            <div class="profile-sub">Kanpur, UP · India</div>
+          </div>
+        </div>
+        <div class="quick-stats">
+          <div class="qs"><span class="qs-n">2</span><span class="qs-l">Projects</span></div>
+          <div class="qs"><span class="qs-n">4+</span><span class="qs-l">Tools</span></div>
+          <div class="qs"><span class="qs-n">2025</span><span class="qs-l">Active</span></div>
+        </div>
+        <div class="interest-tags">
+          <span class="i-tag">Data Analytics</span>
+          <span class="i-tag g">Financial Analytics</span>
+          <span class="i-tag r">Risk Analytics</span>
+          <span class="i-tag">Data Science</span>
+        </div>
+        <div class="mini-terminal">
+          <div class="mt-bar">
+            <div class="mt-dot" style="background:#ff5f57"></div>
+            <div class="mt-dot" style="background:#febc2e"></div>
+            <div class="mt-dot" style="background:#28c840"></div>
+          </div>
+          <div style="color:#5a6480">$ python eda_pipeline.py</div>
+          <div id="ttype" style="color:var(--teal)"></div>
+        </div>
+      </div>
+      <div class="badge-float bf2">🔍 SQL · Python · Power BI</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sh rev">
+    <div class="sh-pre">About Me</div>
+    <h2>The Person Behind the Data</h2>
+    <p>A driven analyst blending technical rigor with business communication to deliver insights that matter.</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-left rev">
+      <div class="id-card">
+        <div class="id-top">
+          <div class="id-av">PY</div>
+          <div class="id-name">Pradeep Yadav</div>
+          <div class="id-role">Data Analyst</div>
+        </div>
+        <div class="id-body">
+          <div class="id-row">
+            <span class="id-k">Location</span>
+            <span class="id-v">Kanpur, UP</span>
+          </div>
+          <div class="id-row">
+            <span class="id-k">Phone</span>
+            <span class="id-v">+91 6388142437</span>
+          </div>
+          <div class="id-row">
+            <span class="id-k">Email</span>
+            <span class="id-v" style="font-size:0.72rem">pradeepyadav25jan@gmail.com</span>
+          </div>
+          <div class="id-row">
+            <span class="id-k">LinkedIn</span>
+            <span class="id-v" style="color:var(--teal);font-size:0.72rem">pradeep-yadav-a8410a256</span>
+          </div>
+          <div class="id-row">
+            <span class="id-k">Status</span>
+            <span class="id-v" style="color:var(--teal)">● Available</span>
+          </div>
+        </div>
+      </div>
+      <div class="corner-dec"></div>
+    </div>
+    <div class="about-right rev">
+      <h3>Turning Data into <span>Decisions</span></h3>
+      <p>
+        I am a detail-oriented Data Analyst with hands-on experience in SQL, Python, Power BI, and Tableau. My core strength lies in dashboard development, KPI reporting, and exploratory data analysis — skills that allow me to transform messy, complex datasets into clear and actionable business intelligence.
+      </p>
+      <p>
+        I am adept at cross-functional stakeholder reporting and thrive on connecting the dots between raw numbers and real business impact. My goal is to leverage expertise in business intelligence, financial analytics, and risk analytics to drive measurable outcomes.
+      </p>
+      <div class="edu-block">
+        <div class="edu-deg">Bachelor of Arts — English &amp; Mathematics</div>
+        <div class="edu-inst">Swami Vivekanand Subharti University (SVSU), Meerut, Uttar Pradesh</div>
+        <div class="edu-yr">2019 – 2021</div>
+      </div>
+      <div class="sh-pre" style="margin-top:24px;margin-bottom:12px;font-size:0.65rem;">Certifications &amp; Learning</div>
+      <div class="cert-list">
+        <div class="cert-item">
+          <span class="cert-icon">◆</span>
+          SQL for Data Analysis Certification
+          <span class="cert-status">In Progress</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">◆</span>
+          Python for Data Science Certification
+          <span class="cert-status">In Progress</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon" style="color:var(--gold)">◆</span>
+          Statistics for Data Analysis — Self-Study
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon" style="color:var(--gold)">◆</span>
+          Business Intelligence & Financial Analytics — Self-Study
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon" style="color:var(--gold)">◆</span>
+          DSA with Python — Self-Study
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sh rev">
+    <div class="sh-pre">Technical Skills</div>
+    <h2>My Tech Stack</h2>
+    <p>Tools and technologies I use daily to extract, analyse, and communicate data-driven insights.</p>
+  </div>
+  <div class="skills-wrap">
+    <div class="skill-section-title">Programming &amp; Query Languages</div>
+    <div class="skills-grid">
+      <div class="sk-chip teal rev"><div class="sk-name">Python</div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">Pandas · NumPy · Matplotlib · Seaborn</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">SQL</div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><div class="sk-pct">MySQL · PostgreSQL</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">Advanced Excel</div><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">Pivot Tables · Power Query · VBA</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">VLOOKUP / Formulas</div><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><div class="sk-pct">Advanced Excel Functions</div></div>
+    </div>
+
+    <div class="skill-section-title">Visualization Tools</div>
+    <div class="skills-grid">
+      <div class="sk-chip gold rev"><div class="sk-name">Microsoft Power BI</div><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">DAX · Reports · Dashboards</div></div>
+      <div class="sk-chip gold rev"><div class="sk-name">Tableau</div><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><div class="sk-pct">Interactive Dashboards</div></div>
+      <div class="sk-chip gold rev"><div class="sk-name">Google Data Studio</div><div class="sk-track"><div class="sk-fill" data-w="70"></div></div><div class="sk-pct">Reporting · KPI Monitoring</div></div>
+      <div class="sk-chip gold rev"><div class="sk-name">Excel Dashboarding</div><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><div class="sk-pct">Charts · Conditional Formatting</div></div>
+    </div>
+
+    <div class="skill-section-title">Analytics &amp; Methods</div>
+    <div class="skills-grid">
+      <div class="sk-chip coral rev"><div class="sk-name">EDA</div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">Exploratory Data Analysis</div></div>
+      <div class="sk-chip coral rev"><div class="sk-name">Statistical Analysis</div><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><div class="sk-pct">Correlation · Distribution</div></div>
+      <div class="sk-chip coral rev"><div class="sk-name">KPI Tracking</div><div class="sk-track"><div class="sk-fill" data-w="87"></div></div><div class="sk-pct">Trend &amp; Variance Analysis</div></div>
+      <div class="sk-chip coral rev"><div class="sk-name">Data Cleaning</div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><div class="sk-pct">Validation · Preprocessing</div></div>
+    </div>
+
+    <div class="skill-section-title">Tools &amp; Platforms</div>
+    <div class="skills-grid">
+      <div class="sk-chip teal rev"><div class="sk-name">Jupyter Notebook</div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><div class="sk-pct">Data Exploration · Analysis</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">Git &amp; GitHub</div><div class="sk-track"><div class="sk-fill" data-w="72"></div></div><div class="sk-pct">Version Control</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">VS Code</div><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><div class="sk-pct">Primary IDE</div></div>
+      <div class="sk-chip teal rev"><div class="sk-name">Microsoft Office</div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><div class="sk-pct">Word · Excel · PowerPoint</div></div>
+    </div>
+
+    <div class="skill-section-title">Soft Skills</div>
+    <div class="soft-tags">
+      <span class="soft-tag">Analytical Thinking</span>
+      <span class="soft-tag">Communication</span>
+      <span class="soft-tag">Problem Solving</span>
+      <span class="soft-tag">Time Management</span>
+      <span class="soft-tag">Stakeholder Reporting</span>
+      <span class="soft-tag">Data Storytelling</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sh rev">
+    <div class="sh-pre">Projects</div>
+    <h2>Featured Work</h2>
+    <p>Real-world analytics projects built with industry-standard tools.</p>
+  </div>
+  <div class="proj-grid">
+    <!-- Project 1 -->
+    <div class="proj-card rev">
+      <div class="proj-hero">
+        <div class="proj-hero-icon">📊</div>
+        <div class="proj-year">2025</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-tools">
+          <span class="p-tag pt">Tableau</span>
+          <span class="p-tag pg">SQL</span>
+          <span class="p-tag pr">Advanced Excel</span>
+        </div>
+        <div class="proj-title">Sales Performance Analytics Dashboard</div>
+        <ul class="proj-bullets">
+          <li>Developed an interactive sales analytics dashboard to monitor revenue, profit trends, customer segments, and regional sales performance.</li>
+          <li>Identified &gt;15% quarterly variation in sales performance through trend and variance analysis, enabling targeted corrective actions.</li>
+          <li>Executed SQL queries for data extraction, cleaning, and transformation prior to dashboard integration.</li>
+          <li>Applied data visualization &amp; storytelling techniques to convert complex datasets into actionable business insights.</li>
+        </ul>
+        <div class="proj-key">
+          <span>Key Skills:</span> Tableau · SQL · KPI Reporting · Business Intelligence · Dashboard Development · Trend Analysis · Stakeholder Reporting
+        </div>
+      </div>
+    </div>
+    <!-- Project 2 -->
+    <div class="proj-card rev">
+      <div class="proj-hero">
+        <div class="proj-hero-icon">🐍</div>
+        <div class="proj-year">2025</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-tools">
+          <span class="p-tag pt">Python</span>
+          <span class="p-tag pt">Pandas</span>
+          <span class="p-tag pg">NumPy</span>
+          <span class="p-tag pr">Matplotlib</span>
+          <span class="p-tag pt">Seaborn</span>
+        </div>
+        <div class="proj-title">Python-Based EDA Pipeline</div>
+        <ul class="proj-bullets">
+          <li>Built reusable Python scripts for data cleaning, preprocessing, profiling, and visualization of structured datasets within Jupyter Notebook.</li>
+          <li>Detected patterns, correlations, outliers, and business trends using statistical techniques including correlation and distribution analysis.</li>
+          <li>Automated data validation and preprocessing workflows, improving analytical accuracy for downstream reporting.</li>
+        </ul>
+        <div class="proj-key">
+          <span>Key Skills:</span> Python · Pandas · Statistical Analysis · Data Cleaning · EDA · Data Visualization · Reporting Automation
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sh rev">
+    <div class="sh-pre">Contact</div>
+    <h2>Let's Connect</h2>
+    <p>Looking for a Data Analyst? I'd love to discuss how I can contribute to your team.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-left rev">
+      <h3>Get In Touch</h3>
+      <p>Whether you have an opportunity, a project, or just want to connect — feel free to reach out. I respond within 24 hours.</p>
+      <div class="c-items">
+        <div class="c-item">
+          <div class="c-icon">📧</div>
+          <div>
+            <div class="c-lbl">Email</div>
+            <div class="c-val"><a href="mailto:pradeepyadav25jan@gmail.com">pradeepyadav25jan@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">📱</div>
+          <div>
+            <div class="c-lbl">Phone</div>
+            <div class="c-val">+91 6388142437</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">💼</div>
+          <div>
+            <div class="c-lbl">LinkedIn</div>
+            <div class="c-val"><a href="https://linkedin.com/in/pradeep-yadav-a8410a256" target="_blank">pradeep-yadav-a8410a256</a></div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-lbl">Location</div>
+            <div class="c-val">Kanpur, Uttar Pradesh, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form rev" id="cf">
+      <div class="form-row">
+        <div class="fg"><label>Name</label><input type="text" id="fn" placeholder="Your Name"></div>
+        <div class="fg"><label>Email</label><input type="email" id="fe" placeholder="your@email.com"></div>
+      </div>
+      <div class="fg">
+        <label>Subject</label>
+        <select id="fs">
+          <option value="">Select topic...</option>
+          <option>Full-time Opportunity</option>
+          <option>Freelance / Contract</option>
+          <option>Collaboration</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+      <div class="fg"><label>Message</label><textarea id="fm" placeholder="Tell me about the role or project..."></textarea></div>
+      <button class="f-submit" onclick="sendMsg()">Send Message →</button>
+      <div class="f-success" id="fs2">✓ Message sent! I'll reply within 24 hours.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Pradeep Yadav — Data Analyst Portfolio</p>
+  <div class="soc">
+    <a href="https://linkedin.com/in/pradeep-yadav-a8410a256" target="_blank" title="LinkedIn">in</a>
+    <a href="mailto:pradeepyadav25jan@gmail.com" title="Email">@</a>
+    <a href="#" title="GitHub">⌥</a>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
